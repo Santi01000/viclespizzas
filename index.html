@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicles Pizzería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-pattern {
+            background-image: url('http://static.photos/food/1200x630/42');
+            background-size: cover;
+            background-position: center;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-red-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="pizza" class="w-8 h-8"></i>
+                <span class="text-2xl font-bold">Vicles</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#menu" class="hover:text-yellow-200 transition">Menú</a>
+                <a href="#about" class="hover:text-yellow-200 transition">Nosotros</a>
+                <a href="#contact" class="hover:text-yellow-200 transition">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <i data-feather="menu" class="w-6 h-6"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern text-white py-20 md:py-32 relative">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">Vicles Pizzería</h1>
+            <p class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="200">Las pizzas más deliciosas de la ciudad</p>
+            <a href="tel:+598098727498" class="bg-yellow-500 hover:bg-yellow-600 text-red-900 font-bold py-3 px-8 rounded-full inline-flex items-center transition" data-aos="zoom-in" data-aos-delay="400">
+                <i data-feather="phone" class="mr-2"></i> Llama ahora: +598 098727498
+            </a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-red-600" data-aos="fade-up">Nuestro Menú</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pizzas -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md menu-item transition" data-aos="fade-up">
+                    <img src="https://huggingface.co/spaces/Grummxyz/vicles-pizzas/resolve/main/images/1000045363.jpg" alt="Pizzas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="circle" class="text-red-500 mr-2"></i>
+                            <h3 class="text-xl font-bold">Pizzas</h3>
+                        </div>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Muzzarella</span>
+                                <span class="font-bold">$320</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Napolitana</span>
+                                <span class="font-bold">$350</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Jamón y Morrones</span>
+                                <span class="font-bold">$380</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chivitos -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md menu-item transition" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://huggingface.co/spaces/Grummxyz/vicles-pizzas/resolve/main/images/1000045361.jpg" alt="Chivitos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="circle" class="text-red-500 mr-2"></i>
+                            <h3 class="text-xl font-bold">Chivitos</h3>
+                        </div>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Chivito Clásico</span>
+                                <span class="font-bold">$420</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Chivito Canadiense</span>
+                                <span class="font-bold">$450</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Chivito al Plato</span>
+                                <span class="font-bold">$480</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Chivito Vegetariano</span>
+                                <span class="font-bold">$400</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Calzones -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md menu-item transition" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://huggingface.co/spaces/Grummxyz/vicles-pizzas/resolve/main/images/1000045365.jpg" alt="Calzones" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="circle" class="text-red-500 mr-2"></i>
+                            <h3 class="text-xl font-bold">Calzones</h3>
+                        </div>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Calzone Clásico</span>
+                                <span class="font-bold">$350</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Calzone Especial</span>
+                                <span class="font-bold">$390</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Calzone de Jamón</span>
+                                <span class="font-bold">$370</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Calzone Vegetal</span>
+                                <span class="font-bold">$330</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-right">
+                    <img src="https://huggingface.co/spaces/Grummxyz/vicles-pizzas/resolve/main/images/1000045370.jpg" alt="Equipo Vicles" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6 text-red-600">Nuestro Compromiso</h2>
+                    <p class="mb-4 text-gray-700">Ingredientes frescos y preparación artesanal en cada pizza, chivito y calzone que servimos.</p>
+                    <p class="text-gray-700">Calidad y sabor que nos distinguen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-red-600" data-aos="fade-up">¿Cómo pedir?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-gray-700" data-aos="fade-up" data-aos-delay="200">Solo tienes que llamarnos por teléfono para realizar tu pedido o consultar por promociones especiales.</p>
+            
+            <div class="bg-red-50 p-8 rounded-lg max-w-md mx-auto shadow-md" data-aos="zoom-in">
+                <div class="flex items-center justify-center mb-4">
+                    <i data-feather="phone" class="text-red-600 mr-3 w-8 h-8"></i>
+                    <span class="text-2xl font-bold text-red-600">+598 098727498</span>
+                </div>
+                <p class="text-gray-700 mb-4">Horario de atención:</p>
+                <p class="font-medium">Lunes a Viernes: 11:00 - 23:00</p>
+                <p class="font-medium">Sábados y Domingos: 12:00 - 00:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="pizza" class="w-6 h-6 text-red-400"></i>
+                        <span class="text-xl font-bold">Vicles</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">Las mejores pizzas desde 2024</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com/Vicles.pizzas" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="tel:+598098727498" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Vicles Pizzería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
